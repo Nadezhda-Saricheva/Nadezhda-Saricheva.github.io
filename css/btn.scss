@@ -1,0 +1,12 @@
+.btn {
+	background: $white;
+	color: $green;
+	text-decoration: none;
+	text-transform: uppercase;
+	border-radius: 50px;
+	font-size: 19px;
+	display: inline-block;
+	padding: 20px 35px;
+	@include alegreya($style: extra);
+	line-height: 1;
+}

@@ -1,0 +1,20 @@
+$white: #fff;
+$green: #365a49;
+$grey: #666;
+$circle: #f2f5f4;
+
+@import "./normalize.scss";
+@import "./fonts.scss";
+@import "./layout.scss";
+@import "./animations.scss";
+@import "./mixins.scss";
+
+@import "./section.scss";
+@import "./header.scss";
+@import "./menu.scss";
+@import "./hero.scss";
+@import "./btn.scss";
+@import "./phone.scss";
+@import "./merit.scss";
+@import "./features.scss";
+@import "./feature.scss";
