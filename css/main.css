@@ -576,6 +576,9 @@ img {
   line-height: 1.2;
   margin: 0px;
 }
+.section__title-left {
+  text-align: left;
+}
 
 .header {
   position: absolute;
@@ -660,7 +663,7 @@ img {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  max-width: 380px;
+  max-width: 370px;
   margin-bottom: 60px;
 }
 
@@ -821,12 +824,13 @@ img {
   position: relative;
   text-align: center;
   max-width: 25%;
+  padding-right: 5px;
 }
 
 .ACCORDEON__item-avatar {
   max-width: 220px;
   max-height: 288px;
-  margin-bottom: 5px;
+  margin-bottom: 15px;
 }
 
 .ACCORDEON__item-avatar-img {
