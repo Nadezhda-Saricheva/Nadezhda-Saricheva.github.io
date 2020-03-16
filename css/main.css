@@ -576,6 +576,9 @@ img {
   line-height: 1.2;
   margin: 0px;
 }
+.section__title-left {
+  text-align: left;
+}
 
 .header {
   position: absolute;
@@ -800,9 +803,9 @@ img {
 .team:after {
   content: url(../img/bg/team_berry_left.png);
   position: absolute;
-  bottom: 0px;
+  bottom: -3.125rem;
   left: 3%;
-  z-index: 2;
+  z-index: 4;
 }
 .team .section__title {
   margin-bottom: 5px;
@@ -821,12 +824,13 @@ img {
   position: relative;
   text-align: center;
   max-width: 25%;
+  padding-right: 5px;
 }
 
 .ACCORDEON__item-avatar {
   max-width: 220px;
   max-height: 288px;
-  margin-bottom: 5px;
+  margin-bottom: 15px;
 }
 
 .ACCORDEON__item-avatar-img {
@@ -854,4 +858,38 @@ img {
 
 .ACCORDEON__item-box-text {
   color: #666;
+}
+
+.review {
+  position: relative;
+}
+.review:before {
+  content: url(../img/bg/review_group_left.png) center center/contain no-repeat;
+  width: 140px;
+  height: 300px;
+  position: absolute;
+  bottom: -10%;
+  left: -5px;
+}
+.review:after {
+  text-align: center;
+  background: url(../img/bg/review_group_right.png) no-repeat;
+  position: absolute;
+  top: 5.3%;
+  right: 1.3%;
+}
+
+.review__list {
+  width: 100%;
+  display: flex;
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+
+.review__item {
+  flex: 0 0 100%;
+  background: url(../img/bg/review_bg_card.png) right top no-repeat;
+  padding-top: 3.3125rem;
+  padding-left: 2.9375rem;
+  position: relative;
 }
