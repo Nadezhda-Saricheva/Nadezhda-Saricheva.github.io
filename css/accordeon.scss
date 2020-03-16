@@ -1,0 +1,50 @@
+.ACCORDEON {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.ACCORDEON__item {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	position: relative;
+	text-align: center;
+	max-width: 25%;
+	padding-right: 5px;
+}
+
+.ACCORDEON__item-avatar {
+	max-width: 220px;
+	max-height: 288px;
+	margin-bottom: 15px;
+
+}
+
+.ACCORDEON__item-avatar-img {
+	max-width: 100%;
+}
+
+.ACCORDEON__item-avatar--drop {
+	height: 0px;
+	overflow: hidden;
+
+}
+
+.ACCORDEON__item-title {
+	font-size: 21px;
+	font-weight: bold;
+	cursor: pointer;
+	margin-bottom: 5px;
+	position: relative;
+	outline: none;
+	border-width: initial;
+	border-style: none;
+	border-color: initial;
+	border-image: initial;
+	background: none;
+}
+
+.ACCORDEON__item-box-text {
+	color: $grey;
+}
