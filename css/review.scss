@@ -1,0 +1,41 @@
+.review {
+	display: flex;
+}
+
+.review__avatar {
+	width: 15.875rem;
+	height: 16.25rem;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+
+}
+
+.review__avatar-img {
+	max-width: 100%;
+}
+
+.review__content {
+	display: flex;
+	flex-direction: column;
+	padding-top: 2%;
+
+}
+
+.review__title {
+	font-size: 30px;
+	font-weight: bold;
+	margin-bottom: 15px;
+}
+
+.review__text {
+	color: $grey;
+	line-height: 1.2;
+	font-weight: 18px;
+	margin-bottom: 1.5625rem;
+}
+
+.review__author {
+	font-weight: 500;
+	font-style: 18px;
+}

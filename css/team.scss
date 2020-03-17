@@ -1,14 +1,18 @@
 .team {
 
-	&:after {
-	content: url(../img/bg/team_berry_left.png);
-	position: absolute;
-	bottom: 0px;
-	left: 3%;
-	z-index: 2;
-	}
-	
-	.section__title {
-		margin-bottom: 5px;
-	}
+	.container {
+		position: relative;
+		
+		&:after {
+		content: url(../img/bg/team_berry_left.png);
+		position: absolute;
+		bottom: -50px;
+		left: -55px;
+		z-index: 4;
+		}
+		
+		.section__title {
+			margin-bottom: 5px;
+		}
+	}	
 }
