@@ -3,7 +3,9 @@
 	color: #fff;
 	background: url(../img/content/hero_bg_bars.png) 85% center / 37% no-repeat,
 							url(../img/bg/hero_bg_list.png) right center / contain no-repeat,
-							#86c3d7;			
+							#86c3d7;
+							
+
 	
 	.container {
 		position: relative;
@@ -42,7 +44,7 @@
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
-	max-width: 380px;
+	max-width: 370px;
 	margin-bottom: 60px;
 }
 

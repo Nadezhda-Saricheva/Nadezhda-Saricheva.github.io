@@ -579,6 +579,9 @@ img {
 .section__title-left {
   text-align: left;
 }
+.section__title-left {
+  text-align: left;
+}
 
 .header {
   position: absolute;
@@ -663,7 +666,7 @@ img {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  max-width: 380px;
+  max-width: 370px;
   margin-bottom: 60px;
 }
 
@@ -988,3 +991,4 @@ img {
   font-weight: 500;
   font-style: 18px;
 }
+
