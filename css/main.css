@@ -800,12 +800,12 @@ img {
   background: #f8faf9;
 }
 
-.team:after {
-  content: url(../img/bg/team_berry_left.png);
-  position: absolute;
-  bottom: 0px;
-  left: 3%;
-  z-index: 2;
+.team .container:after {
+   content: url(../img/bg/team_berry_left.png);
+	position: absolute;
+	bottom: -50px;
+	left: -55px;
+   z-index: 4;
 }
 .team .section__title {
   margin-bottom: 5px;
