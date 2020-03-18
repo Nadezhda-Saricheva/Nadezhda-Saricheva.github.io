@@ -4,8 +4,8 @@
 	&:before {
 		content: "";
 		background: url("../img/bg/review_group_left.png") center center / contain no-repeat;
-		width: 8.6875rem;
-		height: 20.0625rem;
+		width: 139px;
+		height: 321px;
 		position: absolute;
 		bottom: -110px;
 		left: 0;
@@ -49,12 +49,12 @@
 	}
 
 	.review__avatar {
-		margin-right: 1.0625rem;
+		margin-right: 15px;
 
 	}
 
 	.review__content {
-		max-width: 27.8125rem;
+		max-width: 445px;
 
 	}
 
@@ -83,7 +83,7 @@
 }
 
 .reviews__pagination-item {
-	margin-right: 0.625rem;
+	margin-right: 10px;
 
 	&--active {
 		.reviews__pagination-button {
