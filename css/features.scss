@@ -9,7 +9,7 @@
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		margin-bottom: 57px;
+		margin-bottom: 60px;
 
 	}
 
@@ -17,7 +17,7 @@
 	content: url(../img/bg/why_group_left.png);
 	position: absolute;
 	left: 0;
-	top: 69%;
+	top: 68%;
 	}
 }
 
@@ -27,7 +27,7 @@
 }
 
 .features__item {
-	width: calc(100% / 3 - 60px);
+	width: calc(100% / 3 - 35px);
 	position: relative;
 
 	:before {

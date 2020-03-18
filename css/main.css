@@ -574,7 +574,7 @@ img {
   text-transform: uppercase;
   font-weight: bold;
   line-height: 1.2;
-  margin: 20px;
+  margin-bottom: 15px;
 }
 .section__title-left {
   text-align: left;
@@ -629,7 +629,7 @@ img {
 .hero {
   position: relative;
   color: #fff;
-  background: url(../img/content/hero_bg_bars.png) 85% center/37% no-repeat, url(../img/bg/hero_bg_list.png) right center/contain no-repeat, #86c3d7;
+  background: url(../img/content/hero_bg_bars.png) 95% center/44% no-repeat, url(../img/bg/hero_bg_list.png) right center/contain no-repeat, #86c3d7;
 }
 .hero .container {
   position: relative;
@@ -644,7 +644,7 @@ img {
   content: url(../img/bg/hero_bg_group.png);
   position: absolute;
   bottom: -55px;
-  right: -90px;
+  right: -68px;
 }
 
 .hero__container {
@@ -656,7 +656,7 @@ img {
 
 .hero__desc {
   font-size: 21px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 .hero__content {
@@ -664,7 +664,7 @@ img {
   flex-direction: column;
   align-items: flex-start;
   max-width: 370px;
-  margin-bottom: 60px;
+  margin: 100px 0 40px 0;
 }
 
 .btn {
@@ -733,13 +733,13 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 57px;
+  margin-bottom: 60px;
 }
 .features:after {
   content: url(../img/bg/why_group_left.png);
   position: absolute;
   left: 0;
-  top: 69%;
+  top: 68%;
 }
 
 .features__list {
@@ -748,7 +748,7 @@ img {
 }
 
 .features__item {
-  width: calc(100% / 3 - 60px);
+  width: calc(100% / 3 - 35px);
   position: relative;
 }
 .features__item :before {
@@ -872,27 +872,28 @@ img {
   width: 139px;
   height: 321px;
   position: absolute;
-  bottom: -110px;
+  bottom: -160px;
   left: 0;
 }
 .reviews:after {
   content: url("../img/bg/review_group_right.png");
   position: absolute;
-  top: -30px;
-  right: 70px;
+  top: 25px;
+  right: 16px;
 }
 
 .reviews__list {
   width: 100%;
   display: flex;
   overflow: hidden;
-  margin-bottom: 15px;
+  padding-top: 15px;
+  margin-bottom: 30px;
 }
 
 .reviews__item {
   flex: 0 0 100%;
   background: url(../img/bg/review_bg_card.png) right top no-repeat #f8faf9;
-  padding: 50px 0 35px 45px;
+  padding: 50px 0 0 45px;
   position: relative;
 }
 .reviews__item:before {
@@ -912,6 +913,7 @@ img {
 }
 .reviews__item .review__content {
   max-width: 445px;
+  max-height: 290px;
 }
 
 .reviews__pagination {
@@ -954,7 +956,7 @@ img {
 }
 
 .review__avatar {
-  width: 4064px;
+  width: 254px;
   height: 260px;
   justify-content: center;
   align-items: center;
@@ -968,23 +970,22 @@ img {
 .review__content {
   display: flex;
   flex-direction: column;
-  padding-top: 2%;
 }
 
 .review__title {
   font-size: 30px;
   font-weight: bold;
-  margin-bottom: 15px;
+  margin: 15px 0;
 }
 
 .review__text {
   color: #666;
   line-height: 1.2;
-  font-weight: 18px;
+  font-size: 18px;
   margin-bottom: 25px;
 }
 
 .review__author {
   font-weight: 500;
-  font-style: 18px;
+  font-size: 18px;
 }
