@@ -1,7 +1,7 @@
 .hero {
 	position: relative;
 	color: #fff;
-	background: url(../img/content/hero_bg_bars.png) 85% center / 37% no-repeat,
+	background: url(../img/content/hero_bg_bars.png) 95% center / 44% no-repeat,
 							url(../img/bg/hero_bg_list.png) right center / contain no-repeat,
 							#86c3d7;
 							
@@ -21,7 +21,7 @@
 			content: url(../img/bg/hero_bg_group.png);
 			position: absolute;
 			bottom: -55px;
-			right: -90px;
+			right: -68px;
 		}
 
 	}
@@ -37,7 +37,7 @@
 
 .hero__desc {
 	font-size: 21px;
-	margin-bottom: 30px;
+	margin-bottom: 20px;
 }
 
 .hero__content {
@@ -45,6 +45,6 @@
 	flex-direction: column;
 	align-items: flex-start;
 	max-width: 370px;
-	margin-bottom: 60px;
+	margin: 100px 0 40px 0;
 }
 
