@@ -5,6 +5,7 @@
 .review__avatar {
 	width: 254px;
 	height: 260px;
+
 	justify-content: center;
 	align-items: center;
 	overflow: hidden;
@@ -18,13 +19,14 @@
 .review__content {
 	display: flex;
 	flex-direction: column;
-
 }
 
 .review__title {
 	font-size: 30px;
 	font-weight: bold;
+
 	margin: 15px 0;
+
 }
 
 .review__text {
