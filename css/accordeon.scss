@@ -1,37 +1,36 @@
-.ACCORDEON {
+.accordeon {
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;
 }
 
-.ACCORDEON__item {
+.accordeon__item {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	position: relative;
 	text-align: center;
 	max-width: 25%;
-	padding-right: 5px;
 }
 
-.ACCORDEON__item-avatar {
+.accordeon__item-avatar {
 	max-width: 220px;
 	max-height: 288px;
 	margin-bottom: 15px;
 
 }
 
-.ACCORDEON__item-avatar-img {
+.accordeon__item-avatar-img {
 	max-width: 100%;
 }
 
-.ACCORDEON__item-avatar--drop {
+.accordeon__item-avatar--drop {
 	height: 0px;
 	overflow: hidden;
 
 }
 
-.ACCORDEON__item-title {
+.accordeon__item-title {
 	font-size: 21px;
 	font-weight: bold;
 	cursor: pointer;
@@ -45,6 +44,6 @@
 	background: none;
 }
 
-.ACCORDEON__item-box-text {
+.accordeon__item-box-text {
 	color: $grey;
 }

@@ -1,5 +1,3 @@
-$itemsMargin: 15px;
-
 .menu {
 	display: flex;
 	align-items: center;
@@ -10,18 +8,16 @@ $itemsMargin: 15px;
 	width: 100%;
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-between;
+	justify-content: space-evenly;
 }
 
 .menu__item {
 	display: flex;
 	align-items: center;
-	margin-right: $itemsMargin;
 }
 
 .menu__link {
 	color: $white;
-	margin-left: $itemsMargin;
 	text-decoration: none;
 	font-weight: 400;	
 	font-size: 18px;
