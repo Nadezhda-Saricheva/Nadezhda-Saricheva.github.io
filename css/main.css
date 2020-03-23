@@ -581,9 +581,8 @@ button {
   text-transform: uppercase;
   font-weight: bold;
   line-height: 1.2;
-  margin-bottom: 15px;
+  margin-bottom: 25px;
 }
-
 .section__title-left {
   text-align: left;
 }
@@ -750,7 +749,6 @@ button {
   font-size: 27px;
   font-weight: bold;
   margin: 25px 0;
-
 }
 
 .features__list {
@@ -821,9 +819,6 @@ button {
   bottom: -50px;
   left: -55px;
   z-index: 4;
-}
-.team .container .section__title {
-  margin-bottom: 5px;
 }
 
 .accordeon {
@@ -1000,4 +995,3 @@ button {
   font-weight: 500;
   font-size: 18px;
 }
-
