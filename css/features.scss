@@ -21,12 +21,6 @@
 	}
 }
 
-.feature__title {
-	font-size: 27px;
-	font-weight: bold;
-	margin: 25px 0;
-}
-
 .features__list {
 	display: flex;
 	justify-content: space-between;
@@ -36,14 +30,16 @@
 	width: calc(100% / 3 - 35px);
 	position: relative;
 
-	&:after {
+	:before {
 		content: url(../img/point.png);
 		position: absolute;
 		top: 77px;
-		left: 270px;
+		left: -70px;
 	}
+
+	&:first-child :before {
+		content: none;
+	}
+
 }
 
-.features__item:last-child:after {
-	content: "";
-}

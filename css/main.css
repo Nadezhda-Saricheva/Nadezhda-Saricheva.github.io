@@ -507,7 +507,7 @@ h3,
 h4,
 h5,
 h6 {
-  margin: 0;
+  margin-top: 0;
   font-weight: normal;
 }
 
@@ -522,9 +522,6 @@ ul {
 }
 ul li {
   list-style: none;
-}
-ul li:last-child {
-  margin-right: 0px;
 }
 
 p {
@@ -549,10 +546,6 @@ a {
 img {
   display: block;
   max-width: 100%;
-}
-
-button {
-  outline: none;
 }
 
 @keyframes slideInUp {
@@ -598,7 +591,8 @@ button {
 .header .container {
   display: flex;
   justify-content: space-between;
-  padding: 15px 0 15px 0;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
 .header__btns {
@@ -616,16 +610,18 @@ button {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 
 .menu__item {
   display: flex;
   align-items: center;
+  margin-right: 15px;
 }
 
 .menu__link {
   color: #fff;
+  margin-left: 15px;
   text-decoration: none;
   font-weight: 400;
   font-size: 18px;
@@ -709,6 +705,7 @@ button {
 
 .merit__item {
   display: flex;
+  align-items: center;
   margin-right: 3.5%;
 }
 
@@ -746,13 +743,6 @@ button {
   top: 68%;
 }
 
-.feature__title {
-  font-size: 27px;
-  font-weight: bold;
-  margin: 25px 0;
-
-}
-
 .features__list {
   display: flex;
   justify-content: space-between;
@@ -762,15 +752,14 @@ button {
   width: calc(100% / 3 - 35px);
   position: relative;
 }
-.features__item:after {
+.features__item :before {
   content: url(../img/point.png);
   position: absolute;
   top: 77px;
-  left: 270px;
+  left: -70px;
 }
-
-.features__item:last-child:after {
-  content: "";
+.features__item:first-child :before {
+  content: none;
 }
 
 .feature {
@@ -826,37 +815,38 @@ button {
   margin-bottom: 5px;
 }
 
-.accordeon {
+.ACCORDEON {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
 
-.accordeon__item {
+.ACCORDEON__item {
   display: flex;
   flex-direction: column;
   align-items: center;
   position: relative;
   text-align: center;
   max-width: 25%;
+  padding-right: 5px;
 }
 
-.accordeon__item-avatar {
+.ACCORDEON__item-avatar {
   max-width: 220px;
   max-height: 288px;
   margin-bottom: 15px;
 }
 
-.accordeon__item-avatar-img {
+.ACCORDEON__item-avatar-img {
   max-width: 100%;
 }
 
-.accordeon__item-avatar--drop {
+.ACCORDEON__item-avatar--drop {
   height: 0px;
   overflow: hidden;
 }
 
-.accordeon__item-title {
+.ACCORDEON__item-title {
   font-size: 21px;
   font-weight: bold;
   cursor: pointer;
@@ -870,7 +860,7 @@ button {
   background: none;
 }
 
-.accordeon__item-box-text {
+.ACCORDEON__item-box-text {
   color: #666;
 }
 
@@ -958,8 +948,8 @@ button {
 }
 
 .reviews__pagination-img {
-  max-width: 100%;
-  max-height: 100%;
+  font-size: 0;
+  width: 100%;
 }
 
 .review {
