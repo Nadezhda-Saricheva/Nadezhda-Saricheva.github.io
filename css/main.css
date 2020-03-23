@@ -583,6 +583,7 @@ button {
   line-height: 1.2;
   margin-bottom: 15px;
 }
+
 .section__title-left {
   text-align: left;
 }
@@ -749,6 +750,7 @@ button {
   font-size: 27px;
   font-weight: bold;
   margin: 25px 0;
+
 }
 
 .features__list {
@@ -998,3 +1000,4 @@ button {
   font-weight: 500;
   font-size: 18px;
 }
+

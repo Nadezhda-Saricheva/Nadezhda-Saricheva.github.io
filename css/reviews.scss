@@ -51,7 +51,6 @@
 
 	.review__avatar {
 		margin-right: 15px;
-
 	}
 
 	.review__content {
@@ -85,7 +84,7 @@
 
 .reviews__pagination-item {
 	margin-right: 10px;
-
+  
 	&--active {
 		.reviews__pagination-button {
 			border: 6px solid #365a49;
@@ -101,5 +100,4 @@
 .reviews__pagination-img {
 	max-width: 100%;
 	max-height: 100%;
-
 }
