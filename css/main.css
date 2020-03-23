@@ -507,7 +507,7 @@ h3,
 h4,
 h5,
 h6 {
-  margin-top: 0;
+  margin: 0;
   font-weight: normal;
 }
 
@@ -522,6 +522,9 @@ ul {
 }
 ul li {
   list-style: none;
+}
+ul li:last-child {
+  margin-right: 0px;
 }
 
 p {
@@ -546,6 +549,10 @@ a {
 img {
   display: block;
   max-width: 100%;
+}
+
+button {
+  outline: none;
 }
 
 @keyframes slideInUp {
@@ -590,8 +597,7 @@ img {
 .header .container {
   display: flex;
   justify-content: space-between;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding: 15px 0 15px 0;
 }
 
 .header__btns {
@@ -609,18 +615,16 @@ img {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 
 .menu__item {
   display: flex;
   align-items: center;
-  margin-right: 15px;
 }
 
 .menu__link {
   color: #fff;
-  margin-left: 15px;
   text-decoration: none;
   font-weight: 400;
   font-size: 18px;
@@ -704,7 +708,6 @@ img {
 
 .merit__item {
   display: flex;
-  align-items: center;
   margin-right: 3.5%;
 }
 
@@ -742,6 +745,12 @@ img {
   top: 68%;
 }
 
+.feature__title {
+  font-size: 27px;
+  font-weight: bold;
+  margin: 25px 0;
+}
+
 .features__list {
   display: flex;
   justify-content: space-between;
@@ -751,14 +760,15 @@ img {
   width: calc(100% / 3 - 35px);
   position: relative;
 }
-.features__item :before {
+.features__item:after {
   content: url(../img/point.png);
   position: absolute;
   top: 77px;
-  left: -70px;
+  left: 270px;
 }
-.features__item:first-child :before {
-  content: none;
+
+.features__item:last-child:after {
+  content: "";
 }
 
 .feature {
@@ -814,38 +824,37 @@ img {
   margin-bottom: 5px;
 }
 
-.ACCORDEON {
+.accordeon {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
 
-.ACCORDEON__item {
+.accordeon__item {
   display: flex;
   flex-direction: column;
   align-items: center;
   position: relative;
   text-align: center;
   max-width: 25%;
-  padding-right: 5px;
 }
 
-.ACCORDEON__item-avatar {
+.accordeon__item-avatar {
   max-width: 220px;
   max-height: 288px;
   margin-bottom: 15px;
 }
 
-.ACCORDEON__item-avatar-img {
+.accordeon__item-avatar-img {
   max-width: 100%;
 }
 
-.ACCORDEON__item-avatar--drop {
+.accordeon__item-avatar--drop {
   height: 0px;
   overflow: hidden;
 }
 
-.ACCORDEON__item-title {
+.accordeon__item-title {
   font-size: 21px;
   font-weight: bold;
   cursor: pointer;
@@ -859,7 +868,7 @@ img {
   background: none;
 }
 
-.ACCORDEON__item-box-text {
+.accordeon__item-box-text {
   color: #666;
 }
 
@@ -947,8 +956,8 @@ img {
 }
 
 .reviews__pagination-img {
-  font-size: 0;
-  width: 100%;
+  max-width: 100%;
+  max-height: 100%;
 }
 
 .review {
