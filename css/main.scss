@@ -3,6 +3,7 @@ $green: #365a49;
 $grey: #666;
 $circle: #f2f5f4;
 $fone_bars: #f8faf9;
+$fone__order: #d2ddd9;
 
 @import "./normalize.scss";
 @import "./fonts.scss";
@@ -24,4 +25,7 @@ $fone_bars: #f8faf9;
 @import "./accordeon.scss";
 @import "./reviews.scss";
 @import "./review.scss";
-
+@import "./order.scss";
+@import "./contacts.scss";
+@import "./footer.scss";
+@import "./pagination.scss";

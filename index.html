@@ -37,7 +37,7 @@
 							<div class="hero__content">
 								<h1 class="section__title section__title-left">натуральные шоколадные батончики</h1>
 								<h4 class="hero__desc">Наши батончики идеально подходят для тех, кто следит за своим здоровьем</h4>
-								<a href="#" class="btn">
+								<a href="#" class="button">
 									<span>Заказать</span>
 								</a>
 							</div>
@@ -126,17 +126,20 @@
 					<div class="container container-align--center">
 						<h2 class="team section__title">Команда</h2>
 						<ul class="accordeon">
-							<li class="accordeon__item">
+							<li class="accordeon__item accordeon__item--active">
 								<div class="accordeon__item-avatar">
 									<img src="./img/content/team1.png" alt="фото Бориса Федоровича" class="accordeon__item-avatar-img">
 								</div>
 								<button class="accordeon__item-title" type="button">
 									<span>Борис Федорович</span>
 								</button>
-								<div class="accordeon__item-box">
-									<div class="accordeon__item-box-position">Главный технолог</div>
-									<p class="accordeon__item-box-text">Отвечает за вкусовые качества
-									и калорийность.</p>
+								<div class="accordeon__item-info-wrapper">
+									<div class="accordeon__item-info">
+										<div class="accordeon__item-info-position">Главный технолог</div>
+										<p class="accordeon__item-info-text">
+											Отвечает за вкусовые качества и калорийность.
+										</p>
+									</div>
 								</div>
 							</li>
 							<li class="accordeon__item">
@@ -146,10 +149,13 @@
 								<button class="accordeon__item-title" type="button">
 									<span>Алла Иванова</span>
 								</button>
-								<div class="accordeon__item-box">
-									<div class="accordeon__item-box-position">Специалист по упаковке</div>
-									<p class="accordeon__item-box-text">Автор запоминающегося стиля
-									наших батончиков.</p>
+								<div class="accordeon__item-info-wrapper">
+									<div class="accordeon__item-info">
+										<div class="accordeon__item-info-position">Специалист по упаковке</div>
+										<p class="accordeon__item-info-text">
+											Автор запоминающегося стиля наших батончиков.
+										</p>
+									</div>
 								</div>
 							</li>
 							<li class="accordeon__item">
@@ -159,9 +165,13 @@
 								<button class="accordeon__item-title" type="button">
 									<span>Кирилл Матросов</span>
 								</button>
-								<div class="accordeon__item-box">
-									<div class="accordeon__item-box-position">Оператор</div>
-									<p class="accordeon__item-box-text">С радостью поможет подобрать батончики и оформить заказ.</p>
+								<div class="accordeon__item-info-wrapper">
+									<div class="accordeon__item-info">
+										<div class="accordeon__item-info-position">Оператор</div>
+										<p class="accordeon__item-info-text">
+											С радостью поможет подобрать батончики и оформить заказ
+										</p>
+									</div>
 								</div>
 							</li>
 							<li class="accordeon__item">
@@ -171,10 +181,13 @@
 								<button class="accordeon__item-title" type="button">
 									<span>Мила Рыжкова</span>
 								</button>
-								<div class="accordeon__item-box">
-									<div class="accordeon__item-box-position">PR, маркетинг</div>
-									<p class="accordeon__item-box-text">По всем вопросам сотрудничества
-									и рекламы писать только Миле.</p>
+								<div class="accordeon__item-info-wrapper">
+									<div class="accordeon__item-info">
+										<div class="accordeon__item-info-position">PR, маркетинг</div>
+										<p class="accordeon__item-info-text">
+											По всем вопросам сотрудничества и рекламы писать только Миле.
+										</p>
+									</div>
 								</div>
 							</li>
 						</ul>
@@ -240,7 +253,166 @@
 						</ul>
 					</div>
 				</section>
+				<section class="section order">
+					<div class="container container-align--center">
+						<h2 class="section__title section__title--centered">закажите доставку</h2>
+						<form action="#" class="order__form form" id="orderForm">
+							<div class="form__column">
+								<div class="form__row">
+									<label class="form__label">
+										<div class="form__label-title">Имя</div>
+										<input type="text" name="username" class="form__input-text" required>
+									</label>
+									<label class="form__label">
+										<div class="form__label-title">Телефон</div>
+										<input type="text" name="phone" class="form__input-text" required>
+									</label>
+								</div>
+								<div class="form__row">
+									<label class="form__label">
+										<div class="form__label-title">Улица</div>
+										<input type="text" name="street" class="form__input-text">
+									</label>
+								</div>
+								<div class="form__row">
+									<label class="form__label">
+										<div class="form__label-title">Дом</div>
+										<input type="text" name="house" class="form__input-text">
+									</label>
+									<label class="form__label">
+										<div class="form__label-title">Корпус</div>
+										<input type="text" name="corpus" class="form__input-text">
+									</label>
+									<label class="form__label">
+										<div class="form__label-title">Квартира</div>
+										<input type="text" name="flat" class="form__input-text">
+									</label>
+									<label class="form__label">
+										<div class="form__label-title">Этаж</div>
+										<input type="text" name="floor" class="form__input-text">
+									</label>
+								</div>
+							</div>
+							<div class="form__column">
+								<div class="form__row">
+									<label class="form__label">
+										<div class="form__label-title">Комментарий</div>
+										<textarea name="comment" class="form__textarea" required></textarea>
+									</label>
+								</div>
+								<div class="form__row form__row--radio">
+									<label class="form__radio-label">
+										<input type="radio" name="payment" value="needBalance" class="form__input-radio">
+										<div class="form__radio-decor"></div>
+										<span class="form__label-title">Потребуется сдача</span>
+									</label>
+									<label class="form__radio-label">
+										<input type="radio" name="payment" value="payByCard" class="form__input-radio">
+										<div class="form__radio-decor"></div>
+										<span class="form__label-title">Оплата по карте</span>
+									</label>
+								</div>
+								<div class="form__row form__row--checkbox">
+									<label class="form__label form__label--checkbox">
+										<input type="checkbox" name="noCallBack" class="form__input-checkbox">
+										<div class="form__checkbox-decor"></div>
+										<span class="form__label-title">Не перезванивать</span>
+									</label>
+								</div>
+								<div class="form__row form__row--submit">
+									<button type="submit" class="button" name="submit">Заказать</button>
+									<button type="reset" class="reset_btn" name="reset">Очистить</button>
+								</div>
+							</div>
+						</form>
+					</div>
+				</section>
+				<section class="section contacts" id="contacts">
+					<figure class="contacts__map">
+						<img src="./images/img/map.jpg" alt="" class="contacts__map-img">
+					</figure>
+					<footer class="footer">
+						<div class="container">
+							<div class="footer__left">
+								<div class="contacts">
+									<div class="contacts__address">
+										Москва, ул. Новый Арбат, д. 31/12
+									</div>
+									<a href="tel:88009039090" class="phone-number">
+										<svg class="phone-number__icon">
+											<use xlink:href="./svg/sprite.svg#phone"></use>
+										</svg>
+										<span class="phone-number__text">8 800 903 90 90</span>
+									</a>
+								</div>
+							</div>
+							<div class="footer__right">
+								<ul class="socials">
+									<li class="socials__item socials__item--vk">
+										<a href="#" class="socials__item-link">
+											<svg class="socials__item-icon">
+												<use xlink:href="./svg/sprite.svg#vk-icon"></use>
+											</svg>
+										</a>
+									</li>
+									<li class="socials__item socials__item--fb">
+										<a href="#" class="socials__item-link">
+											<svg class="socials__item-icon">
+												<use xlink:href="./svg/sprite.svg#fb-icon"></use>
+											</svg>
+										</a>
+									</li>
+									<li class="socials__item socials__item--inst">
+										<a href="#" class="socials__item-link">
+											<svg class="socials__item-icon">
+												<use xlink:href="./svg/sprite.svg#inst-icon"></use>
+											</svg>
+										</a>
+									</li>
+									<li class="socials__item socials__item--tw">
+										<a href="" class="socials__item-link">
+											<svg class="socials__item-icon">
+												<use xlink:href="./svg/sprite.svg#tw-icon"></use>
+											</svg>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</footer>
+				</section>
 			</main>
+			<nav class="pagination">
+				<ul class="pagination__list">
+					<li class="pagination__item pagination__item--active">
+						<a href="#" class="pagination__link"></a>
+					</li>
+					<li class="pagination__item">
+						<a href="#" class="pagination__link"></a>
+					</li>
+					<li class="pagination__item">
+						<a href="#" class="pagination__link"></a>
+					</li>
+					<li class="pagination__item">
+						<a href="#" class="pagination__link"></a>
+					</li>
+					<li class="pagination__item">
+						<a href="#" class="pagination__link"></a>
+					</li>
+					<li class="pagination__item">
+						<a href="#" class="pagination__link"></a>
+					</li>
+					<li class="pagination__item">
+						<a href="#" class="pagination__link"></a>
+					</li>
+					<li class="pagination__item">
+						<a href="#" class="pagination__link"></a>
+					</li>
+					<li class="pagination__item">
+						<a href="#" class="pagination__link"></a>
+					</li>
+				</ul>
+			</nav>
 		</div>
 	</body>
 </html>
