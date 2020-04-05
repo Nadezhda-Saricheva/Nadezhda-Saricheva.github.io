@@ -16,8 +16,11 @@
 	&:after {
 	content: url(../img/bg/why_group_left.png);
 	position: absolute;
-	left: 0;
+	width: 161px;
+	height: 315px;
 	top: 68%;
+	left: 0;
+	z-index: 2;
 	}
 }
 
