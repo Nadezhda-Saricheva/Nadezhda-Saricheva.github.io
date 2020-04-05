@@ -1,12 +1,28 @@
-.btn {
-	background: $white;
-	color: $green;
-	text-decoration: none;
-	text-transform: uppercase;
-	border-radius: 50px;
+.button {
+	display: block;
+	background-color: #fff;
+	padding: 1.125rem 2.125rem;
+	border: none;
+	border-radius: 19% / 50%;
 	font-size: 19px;
-	display: inline-block;
-	padding: 20px 35px;
-	@include alegreya($style: extra);
-	line-height: 1;
+	font-weight: 800;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	color: $green;
+
+	transition: color .3s, background-color .3s;
+	cursor: pointer;
+	z-index: 2;
+
+	&:hover,
+	&--white {
+		background-color: $green;
+		color: #fff;
+	}
+
+	&--white:hover {
+		background-color: #fff;
+		color: $green;
+	}
+
 }

@@ -30,6 +30,13 @@
 
 }
 
+.accordeon__item-info {
+	width: 100%;
+	overflow: hidden;
+	height: 0;
+	transition: height 0.3s;
+}
+
 .accordeon__item-title {
 	font-size: 21px;
 	font-weight: bold;
@@ -42,8 +49,39 @@
 	border-color: initial;
 	border-image: initial;
 	background: none;
+
+	&:after {
+		content: "";
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		right: -7px;
+		transition: transform 0.3s;
+		height: 0;
+		width: 0;
+		border: 7px solid transparent;
+		border-right-width: 4.5px;
+		border-left-width: 4.5px;
+		border-top-color: #365a49;
+		border-bottom-width: 0;
+	}
 }
+
+.accordeon__item-info-wrapper {
+	height: 75px;
+}
+
+.accordeon__item--active .accordeon__item-info {
+	height: 100%;
+}
+
+.accordeon__item--active .accordeon__item-title:after {
+	transform-origin: center 25%;
+	transform: rotate(180deg);
+}
+
 
 .accordeon__item-box-text {
 	color: $grey;
 }
+
