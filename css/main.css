@@ -751,8 +751,11 @@ button {
 .features:after {
   content: url(../img/bg/why_group_left.png);
   position: absolute;
-  left: 0;
+  width: 161px;
+  height: 315px;
   top: 68%;
+  left: 0;
+  z-index: 2;
 }
 
 .feature__title {
@@ -817,7 +820,18 @@ button {
 }
 
 .bars {
-  background: #f8faf9;
+  position: relative;
+  background-color: #f8faf9;
+}
+.bars:before {
+  content: "";
+  background: url(../img/bg/bar_berry_right-min.png) center center/contain no-repeat;
+  width: 196px;
+  height: 453px;
+  position: absolute;
+  bottom: -160px;
+  right: 0;
+  z-index: 2;
 }
 
 .team .container {
