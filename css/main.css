@@ -1067,7 +1067,7 @@ button {
   height: 48px;
   position: absolute;
   bottom: 70px;
-  left: 8px;
+  left: 20px;
 }
 .order:after {
   content: "";
